@@ -1,0 +1,28 @@
+.ongoing {
+    gap: 10px;
+    width: 500px;
+    height: 350px;
+    position: relative;
+}
+
+.ongoing-list {
+    gap: 10px;
+    width: 100%;
+    border: 2px solid purple;
+    border-radius: 10px;
+    bottom: 0px;
+    position: absolute;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.ongoing-list::-webkit-scrollbar {
+    display: none;
+}   
+
+.ongoingHeading {
+    color: purple !important;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
