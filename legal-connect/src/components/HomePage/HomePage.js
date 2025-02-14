@@ -5,7 +5,6 @@ import LandingPageNavbarOptions from '../LandingPageNavbarOptions/LandingPageNav
 
 const HomePage = () => {
     const name = 'Minesh';
-    console.log(name);
 
     const events = [{name: "hello", id: 1},{name: "human", id: 2}, {name: "my", id: 3}, {name: "styling", id: 4}, {name: "is", id: 5}, {name: "awesome", id: 6},
         {name: "hello", id: 23},{name: "human", id: 10}, {name: "my", id: 11}, {name: "styling", id: 16}, {name: "is", id: 17}, {name: "awesome", id: 22},
@@ -16,8 +15,9 @@ const HomePage = () => {
         <div className="homepage">
             <Navbar  Component={LandingPageNavbarOptions}/>
             <div className="container">
-                <h2>Hello {name}</h2>
-                <Ongoing eventList={events}/>
+                <div className="left"></div>
+                <div className="right"></div>
+                <Ongoing eventList={events} name={name}/>
             </div>
         </div>
      );
