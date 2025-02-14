@@ -1,0 +1,27 @@
+.featuredContent {
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.featuredContent::-webkit-scrollbar {
+    display: none;
+}
+
+.featuredContentProfileImage {
+    border-radius: calc(50%);
+}
+
+.featuredContentProfileName {
+    color: black;
+    font-weight: bold;
+}
+
+.featuredContentProfileDescription {
+    color: black;
+    font-size: medium;
+}
