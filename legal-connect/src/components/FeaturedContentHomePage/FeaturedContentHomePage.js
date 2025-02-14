@@ -1,11 +1,13 @@
+import './FeaturedContentHomePage.css';
+
 const FeaturedContentHomePage = (props) => {
     return ( 
         <div className="featuredContent">
             <div className="featuredContentTop">
-                <img src={props.image} />
-                <h3>{props.name}</h3>
+                <img className="featuredContentProfileImage" src={props.image} />
+                <h3 className="featuredContentProfileName">{props.name}</h3>
             </div>
-            <p>{props.description}</p>
+            <p className="featuredContentProfileDescription">{props.description}</p>
         </div>
      );
 }
