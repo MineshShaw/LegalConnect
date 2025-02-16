@@ -11,14 +11,10 @@
     justify-content: center;
     color: white;
     padding: 25px !important;
-    margin-bottom: 10px !important;
     width: 100% !important;
 }
 
-.links {
-    gap: 10px;
-}
-
-.btn {
-    color: white !important;
+.navbar-bottom {
+    width: 100% !important;
+    background-color: red;
 }
