@@ -1,11 +1,11 @@
 import './Navbar.css';
-import myLogo from 'src/assets/logo.png';
+import AppLogo from '../AppLogo/AppLogo';
 
 const Navbar = ({Component}) => {
     return ( 
         <div className="navbar">
             <div className="navbar-top">
-            <img src={myLogo} alt="logo" />
+            <AppLogo/>
             <h1>Legal Connect</h1>
             </div>
             <div className="navbar-bottom">
