@@ -1,0 +1,18 @@
+.navbar {
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 25px !important;
+    margin-bottom: 10px !important;
+}
+
+.links {
+    gap: 10px;
+}
+
+.btn {
+    color: white !important;
+}
