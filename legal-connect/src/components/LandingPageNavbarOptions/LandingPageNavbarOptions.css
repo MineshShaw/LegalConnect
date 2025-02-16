@@ -1,7 +1,13 @@
 .links {
     gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .btn {
-    color: white !important;
+    background-color: white !important;
+    color: purple !important;
+    padding: 0px 10px 10px 10px;
+    border: 1px solid purple !important;
 }
