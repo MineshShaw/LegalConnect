@@ -18,15 +18,15 @@ const HomePage = () => {
         <div className="homepage">
             <div className="container main-container">
                 <div className="left">
-                <div className="ongoing">
-                    <h2 className="welcomeMessage">Hello {name}</h2>
-                    <div className="ongoing-container">
-                        <h2 className="ongoingHeading">Ongoing</h2>
-                        <ul className="ongoing-list">
-                            {events}
-                        </ul>
+                    <div className="ongoing">
+                        <h2 className="welcomeMessage">Hello {name}</h2>
+                        <div className="ongoing-container">
+                            <h2 className="ongoingHeading">Ongoing</h2>
+                            <ul className="ongoing-list">
+                                {events}
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div className="right">
                     <div className="featuredContent">

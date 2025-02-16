@@ -1,12 +1,18 @@
 .navbar {
+    padding: 0px !important;
+    width: 100%;
+}
+
+.navbar-top {
     height: 100px;
     background-color: blue;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     padding: 25px !important;
     margin-bottom: 10px !important;
+    width: 100% !important;
 }
 
 .links {
