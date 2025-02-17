@@ -9,6 +9,7 @@ import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import { useState } from 'react';
 import LoginSignupPage from './Pages/LoginSignupPage/LoginSignupPage';
+import MyProfile from './Pages/MyProfile/MyProfile';
 
 function App() {
   const [isLoggedIn] = useState(false);
@@ -23,6 +24,7 @@ function App() {
             <Route exact path="/home" element={<HomePage />} />
             <Route exact path="/aboutus" element={<AboutUsPage />} />
             <Route exact path="/login" element={<LoginSignupPage />} />
+            <Route exact path="/myprofile/:id" element={<MyProfile />} />
           </Routes>
         </div>
       </div>
