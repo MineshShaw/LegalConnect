@@ -7,12 +7,19 @@ import LoggedOutLinks from './components/Links/LoggedOutLinks';
 import LoggedInLinks from './components/Links/LoggedInLinks';
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
 import LandingPage from './Pages/LandingPage/LandingPage';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import LoginSignupPage from './Pages/LoginSignupPage/LoginSignupPage';
 import MyProfile from './Pages/MyProfile/MyProfile';
 
 function App() {
   const [isLoggedIn] = useState(false);
+
+  useEffect(() => {
+    fetch('http://localhost:3000')
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err));
+  }, [])
 
   return (
     <Router>
