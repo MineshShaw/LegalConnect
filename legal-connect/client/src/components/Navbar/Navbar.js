@@ -4,13 +4,12 @@ import AppLogo from '../AppLogo/AppLogo';
 const Navbar = ({Component}) => {
     return ( 
         <div className="navbar">
-            <div className="navbar-top">
+            <div className="navbar-main">
             <AppLogo/>
             <h1>Legal Connect</h1>
+            <Component/>
             </div>
-            <div className="navbar-bottom">
-                <Component/>
-            </div>
+          
         </div>
      );
 }
