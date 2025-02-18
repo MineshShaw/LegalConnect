@@ -1,4 +1,7 @@
 .links {
+    display: flex;
+    flex-wrap: wrap;
+    
     gap: 10px;
     width: 100%;
     display: flex;
@@ -6,8 +9,14 @@
 }
 
 .btn {
-    background-color: white !important;
-    color: purple !important;
-    padding: 0px 10px 10px 10px;
-    border: 1px solid purple !important;
+    background-color: #4B2A60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

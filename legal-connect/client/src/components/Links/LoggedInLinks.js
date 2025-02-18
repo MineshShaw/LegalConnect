@@ -6,11 +6,17 @@ const LoggedInLinks = () => {
 
     return ( 
         <div className="links">
-            <button className="btn" onClick={() => navigate("/login")}>Link 1</button>
-            <button className="btn" onClick={() => navigate("/aboutus")}>Link 2</button>
-            <button className="btn" onClick={() => navigate("/login")}>Logout</button>
-            <button className='btn' onClick={() => navigate("/contactus")}>Contact Us</button>
+        {/* Left-aligned buttons */}
+        <div className="left-buttons">
+            <button className="btn" onClick={() => navigate("/aboutus")}>About Us</button>
+            <button className="btn" onClick={() => navigate("/contactus")}>Contact Us</button>
         </div>
+
+        {/* Right-aligned button */}
+        <div className="right-buttons">
+            <button className="btn" onClick={() => navigate("/login")}>Logout</button>
+        </div>
+    </div>
      );
 }
  

@@ -1,20 +1,27 @@
 .navbar {
     padding: 0px !important;
     width: 100%;
+    display : flex;
+    align-items: center;
+
 }
 
-.navbar-top {
+.navbar h1 {
+    color: white;
+    margin-left: 20px;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+
+.navbar-main {
     height: 100px;
-    background-color: blue;
+    background-color: #4B2A60;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     color: white;
-    padding: 25px !important;
+    padding: 20px ;
     width: 100% !important;
 }
 
-.navbar-bottom {
-    width: 100% !important;
-    background-color: red;
-}
