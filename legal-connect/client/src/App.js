@@ -15,10 +15,10 @@ function App() {
   const [isLoggedIn] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:3000')
+    fetch('http://localhost:6969')
       .then(res => res.json())
       .then(data => console.log(data))
-      .catch(err => console.log(err));
+      .catch(err => console.error(err));
   }, [])
 
   return (
