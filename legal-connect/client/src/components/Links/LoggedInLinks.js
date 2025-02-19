@@ -1,5 +1,6 @@
-import "./Links.css";
-import { useNavigate } from "react-router-dom";
+import { UserButton } from '@clerk/clerk-react';
+import './Links.css';
+import {useNavigate} from 'react-router-dom';
 
 const LoggedInLinks = () => {
   const navigate = useNavigate();
@@ -11,8 +12,7 @@ const LoggedInLinks = () => {
       <button className="btn" onClick={() => navigate("/contactus")}>Contact Us</button>
       <button className="btn" onClick={() => navigate("/services")}>Services</button>
       <button className="btn" onClick={() => navigate("/help")}>Help</button>
-      <button className="btn" onClick={() => navigate("/profile")}>Profile</button>
-      
+      <UserButton />
     </div>
   );
 };

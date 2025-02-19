@@ -1,6 +1,9 @@
 import FeaturedContent from '../../components/FeaturedContent/FeaturedContent';
 import './HomePage.css';
 import testdata from '../../data/testdata.json';
+import { useUser } from '@clerk/clerk-react';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const name = testdata.name;
 const image = testdata.image;
@@ -8,6 +11,15 @@ const description = testdata.description;
 const eventList = testdata.eventList;
 
 const HomePage = () => {
+
+    const { isSignedIn } = useUser();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (isSignedIn) {
+        navigate("/home");
+        }
+    }, [isSignedIn, navigate]);
 
     const events = eventList.map((event) => (
         <li key={event.id}>{event.name}</li>
