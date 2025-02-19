@@ -29,7 +29,7 @@ app.post('/login', async (req, res) => {
     });
 });
 
-app.post('/register', async (req, res) => {
+app.post('/signup', async (req, res) => {
     const { email, password } = req.body;
 
     const { data, error } = await supabase.auth.signUp({ email, password });
