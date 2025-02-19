@@ -1,27 +1,38 @@
-.navbar {
-    padding: 0px !important;
-    width: 100%;
-    display : flex;
-    align-items: center;
-
-}
-
-.navbar h1 {
-    color: white;
-    margin-left: 20px;
-    font-size: 28px;
-    white-space: nowrap;
-}
+/* Navbar.css */
 
 
-.navbar-main {
-    height: 100px;
-    background-color: #4B2A60;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;       
+    padding: 0 20px;              
+    background-color: #333;      
+    color: white;                 
+    height: 80px;                  
+  }
+  
+
+  .navbar-left {
     display: flex;
     align-items: center;
-    justify-content: start;
-    color: white;
-    padding: 20px ;
-    width: 100% !important;
-}
+  }
+  
 
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .app-logo {
+     cursor: pointer;
+  }
+     
+ 
