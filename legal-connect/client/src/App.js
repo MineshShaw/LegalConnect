@@ -14,13 +14,6 @@ import MyProfile from './Pages/MyProfile/MyProfile';
 function App() {
   const [isLoggedIn] = useState(false);
 
-  useEffect(() => {
-    fetch('http://localhost:6969')
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.error(err));
-  }, [])
-
   return (
     <Router>
       <div className="App">
