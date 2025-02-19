@@ -1,3 +1,4 @@
+import { UserButton } from '@clerk/clerk-react';
 import './Links.css';
 import {useNavigate} from 'react-router-dom';
 
@@ -16,6 +17,7 @@ const LoggedInLinks = () => {
         <div className="right-buttons">
             <button className="btn" onClick={() => navigate("/login")}>Logout</button>
         </div>
+        <UserButton />
     </div>
      );
 }
