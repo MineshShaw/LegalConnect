@@ -4,6 +4,10 @@ import testdata from '../../data/testdata.json';
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './flipcard.css';
+import extracontentpic from '../../assets/extracontentpic.jpg';
+
+
+
 
 const name = testdata.name;
 const image = testdata.image;
@@ -55,10 +59,10 @@ const LandingPage = () => {
 
     return (
         <div className="LandingPage">
-            <div className="landingpage-main container">
+            <div className="landingpage-main container-fluid">
                 <div className="landingpage-left">
                     <h1>Legal Connect</h1>
-                    <p>"LegalConnect is an AI-powered platform connecting individuals, SMEs, and startups with qualified legal and financial professionals in India. We offer a two-step process combining AI document analysis and human verification, providing tailored insights based on region and language."</p>
+                    <p>LegalConnect is an AI-powered platform connecting individuals, SMEs, and startups with qualified legal and financial professionals in India. We offer a two-step process combining AI document analysis and human verification, providing tailored insights based on region and language.</p>
                     <button className="btn get-started-btn" onClick={() => navigate("/login")}>Get Started</button>
                 </div>
                 <div className="landingpage-right">
@@ -70,11 +74,17 @@ const LandingPage = () => {
 
             {showMore && (
                 <div className="extra-content">
+                    <div className='left'>
                     <h2>Why Choose LegalConnect?</h2>
                     <p>LegalConnect is a one-stop solution for all your legal needs. Our platform offers a range of services that cater to individuals, SMEs, and startups, providing expert advice and support at every step of the legal process.</p>
+                    <img className='featurepic'  src={extracontentpic} alt="Description" />
 
-                    <h3>Our Key Features</h3>
+
+                    </div>
+                  
+                    
                     <div className="key-features">
+                    <h3>Our Key Features</h3>
                         {keyFeatures.map((feature, index) => (
                             <div className="feature-card" key={index}>
                                 <h4>{feature.title}</h4>
