@@ -13,6 +13,8 @@ const Navbar = () => {
             <h1>Legal Connect</h1>
             {isLoggedIn.isSignedIn ? <LoggedInLinks /> : <LoggedOutLinks />}
             </div>
+
+          
           
         </div>
      );
