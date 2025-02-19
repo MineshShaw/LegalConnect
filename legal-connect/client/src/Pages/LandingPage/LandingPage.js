@@ -5,9 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './flipcard.css';
 import extracontentpic from '../../assets/extracontentpic.jpg';
-
-
-
+import { useUser } from '@clerk/clerk-react';
 
 const name = testdata.name;
 const image = testdata.image;
@@ -18,6 +16,13 @@ const LandingPage = () => {
     const [showMoreinfo, setShowMoreinfo] = useState(false);
     const navigate = useNavigate();
     const observerRef = useRef(null);
+    const { isSignedIn } = useUser();
+
+    useEffect(() => {
+        if (isSignedIn) {
+        navigate("/home");
+        }
+    }, [isSignedIn, navigate]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
