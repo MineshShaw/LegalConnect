@@ -23,3 +23,5 @@ server/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+server/legal-connect-5d593-firebase-adminsdk-fbsvc-a845c84347.json
