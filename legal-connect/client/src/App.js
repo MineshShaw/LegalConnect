@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import AboutUsPage from './Pages/AboutUsPage/AboutUsPage';
 import LandingPage from './Pages/LandingPage/LandingPage';
-import LoginSignupPage from './Pages/LoginSignupPage/LoginSignupPage';
 import MyProfile from './Pages/MyProfile/MyProfile';
 import ExplorePage from './Pages/ExplorePage/ExplorePage';
 import ExploreNews from './Pages/ExplorePage/ExploreNews';
@@ -26,7 +25,6 @@ function App() {
               <Route exact path="/ExploreNews" element={<ExploreNews />} />
               <Route exact path="/home" element={<HomePage />} />
               <Route exact path="/aboutus" element={<AboutUsPage />} />
-              <Route exact path="/login" element={<LoginSignupPage />} />
               <Route exact path="/myprofile/:id" element={<MyProfile />} />
               <Route exact path="/ContactUs" element={<ContactUs />} />
             </Routes>

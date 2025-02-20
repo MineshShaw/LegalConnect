@@ -1,3 +1,4 @@
+import { SignInButton } from '@clerk/clerk-react';
 import './Links.css';
 import {useNavigate} from 'react-router-dom';
 
@@ -8,7 +9,9 @@ const LandingPageNavbarOptions = () => {
             <button className="btn" onClick={() => navigate("/explore")}>Explore</button>
             <button className="btn" onClick={() => navigate("/aboutus")}>About Us</button>
             <button className='btn' onClick={() => navigate("/contactus")}>Contact Us</button>
-            <button className="btn" onClick={() => navigate("/login")}>Login/Signup</button>
+            <SignInButton asChild>
+                <button className="btn">Sign In</button> 
+            </SignInButton>
         </div>
      );
 }
