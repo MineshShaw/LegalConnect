@@ -1,12 +1,19 @@
 /* Explore Navbar Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .explore-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #007bff;
+    background: #232323;
     padding: 15px;
     color: white;
     border-radius: 8px;
+    top: 0;
   }
   
   /* Navigation Buttons */
