@@ -8,6 +8,7 @@ import LandingPage from './Pages/LandingPage/LandingPage';
 import LoginSignupPage from './Pages/LoginSignupPage/LoginSignupPage';
 import MyProfile from './Pages/MyProfile/MyProfile';
 import ExplorePage from './Pages/ExplorePage/ExplorePage';
+import ExploreNews from './Pages/ExplorePage/ExploreNews';
 import { ClerkProvider} from '@clerk/clerk-react';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<LandingPage />} />
               <Route exact path="/explore" element={<ExplorePage />} />
+              <Route exact path="/ExploreNews" element={<ExploreNews />} />
               <Route exact path="/home" element={<HomePage />} />
               <Route exact path="/aboutus" element={<AboutUsPage />} />
               <Route exact path="/login" element={<LoginSignupPage />} />

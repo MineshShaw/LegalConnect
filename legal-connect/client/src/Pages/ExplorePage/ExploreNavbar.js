@@ -9,8 +9,8 @@ const ExploreNavbar = ({ setSearchQuery }) => {
     <nav className="explore-navbar">
       {/* Explore Navigation Buttons */}
       <div className="nav-links">
-        <button className="nav-btn" onClick={() => navigate("/explore")}>Main Explore</button>
-        <button className="nav-btn" onClick={() => navigate("/explore-news")}>Explore News</button>
+        
+        <button className="nav-btn" onClick={() => navigate("/ExploreNews")}>Explore News</button>
       </div>
 
       {/* Search Bar */}
