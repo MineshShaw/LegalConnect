@@ -1,0 +1,11 @@
+.myprofile-container {
+    display: flex;
+}
+
+.myprofile-left {
+    width: 78%;
+}
+
+.myprofile-right {
+    width: 20%;
+}
