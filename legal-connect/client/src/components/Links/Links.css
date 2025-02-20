@@ -1,0 +1,29 @@
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+   
+    color: #F5E1C8;
+    padding: 10px 15px;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #F5E1C8;
+    background-color: transparent;
+    color: #e9ab00 ;
+
+}
