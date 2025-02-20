@@ -13,7 +13,7 @@ import { ClerkProvider} from '@clerk/clerk-react';
 function App() {
 
   return (
-    <ClerkProvider afterSignOutUrl='/' publishableKey="pk_test_cHJpbWFyeS1oYWdmaXNoLTYuY2xlcmsuYWNjb3VudHMuZGV2JA">
+    <ClerkProvider afterSignOutUrl='/' afterSignInUrl={'/home'} publishableKey="pk_test_cHJpbWFyeS1oYWdmaXNoLTYuY2xlcmsuYWNjb3VudHMuZGV2JA">
       <Router>
         <div className="App">
           <Navbar />
