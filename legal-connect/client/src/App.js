@@ -10,6 +10,7 @@ import MyProfile from './Pages/MyProfile/MyProfile';
 import ExplorePage from './Pages/ExplorePage/ExplorePage';
 import ExploreNews from './Pages/ExplorePage/ExploreNews';
 import { ClerkProvider} from '@clerk/clerk-react';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
               <Route exact path="/aboutus" element={<AboutUsPage />} />
               <Route exact path="/login" element={<LoginSignupPage />} />
               <Route exact path="/myprofile/:id" element={<MyProfile />} />
+              <Route exact path="/ContactUs" element={<ContactUs />} />
             </Routes>
           </div>
         </div>
