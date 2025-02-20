@@ -15,7 +15,7 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 function App() {
 
   return (
-    <ClerkProvider afterSignOutUrl='/' publishableKey="pk_test_cHJpbWFyeS1oYWdmaXNoLTYuY2xlcmsuYWNjb3VudHMuZGV2JA">
+    <ClerkProvider afterSignOutUrl='/'  publishableKey="pk_test_b3Blbi1oZXJvbi0xLmNsZXJrLmFjY291bnRzLmRldiQ">
       <Router>
         <div className="App">
           <Navbar />

@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
 import './LoginSignupPage.css';
+import { SignIn } from "@clerk/clerk-react";
 
 const LoginSignupPage = () => {
 
-  useEffect(() => {
-    window.location.href = "https://primary-hagfish-6.accounts.dev/sign-in";
-  }, []);
-
-  return <p>Redirecting to login...</p>;
+  return <div className="login-signup-form"><SignIn/></div>;
 };
 
 export default LoginSignupPage;
