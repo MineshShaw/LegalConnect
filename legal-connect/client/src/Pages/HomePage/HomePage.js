@@ -16,8 +16,8 @@ const HomePage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (isSignedIn) {
-        navigate("/home");
+        if (!isSignedIn) {
+        navigate("/");
         }
     }, [isSignedIn, navigate]);
 
