@@ -36,7 +36,7 @@ app.post(
       const eventType = evt.type;
       const userData = evt.data;
 
-      console.log(Received event: ${eventType});
+      console.log(`Received event: ${eventType}`);
 
       // Handle different webhook event types
       if (eventType === "user.created") {
