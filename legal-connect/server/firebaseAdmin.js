@@ -1,13 +1,12 @@
 import admin from "firebase-admin";
-import { readFile } from "fs/promises";
+import "dotenv/config";
 
-const serviceAccount = JSON.parse(
-  await readFile(new URL("./your-service-account.json", import.meta.url))
-);
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)),
+  });
+}
 
 const db = admin.firestore();
-export default db;
+
+export { db };
